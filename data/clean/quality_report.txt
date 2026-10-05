@@ -1,0 +1,58 @@
+SCADA ALARM GATEWAY & MIGRATOR
+DATA QUALITY REPORT
+============================================================
+
+Raw records: 9,999
+Clean records: 7,809
+Rejected records: 2,078
+Duplicate records removed: 112
+
+Clean percentage: 78.10%
+Rejected percentage: 20.78%
+Duplicate percentage: 1.12%
+
+QUALITY FLAGS
+------------------------------------------------------------
+INVALID_NUMERIC_VALUE: 1,892
+MISSING_VALUE: 163
+INVALID_SEVERITY: 123
+INVALID_TIMESTAMP: 86
+INVALID_STATUS: 78
+
+CLEAN DATA - TAG DISTRIBUTION
+------------------------------------------------------------
+LT-101: 1,725
+PT-101: 1,715
+FT-101: 1,448
+TT-101: 1,418
+M-101: 684
+V-101: 682
+P-101: 80
+P-102: 57
+
+CLEAN DATA - SEVERITY DISTRIBUTION
+------------------------------------------------------------
+LOW: 7,070
+HIGH: 333
+CRITICAL: 214
+MEDIUM: 192
+
+CLEAN DATA - ALARM DISTRIBUTION
+------------------------------------------------------------
+NORMAL: 7,070
+HIGH_TEMPERATURE: 127
+PUMP_FAILURE: 78
+HIGH_LEVEL: 76
+HIGH_FLOW: 69
+LOW_FLOW: 69
+LOW_PRESSURE: 68
+LOW_LEVEL: 60
+HIGH_PRESSURE: 60
+HIGH_CURRENT: 57
+COMMUNICATION_LOST: 55
+VALVE_FAILURE: 20
+
+NOTE:
+The raw dataset is intentionally imperfect and is preserved unchanged.
+Rejected records are isolated for traceability.
+Missing values are not automatically rejected because COMMUNICATION_LOST events legitimately contain NULL values.
